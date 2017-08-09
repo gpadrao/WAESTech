@@ -44,6 +44,19 @@ namespace WAES.Web.Tests.Controllers
 
             // Assert
         }
+
+        [TestMethod]
+        public void CompareRightDifferentOfLeftImageWithSameSize()
+        {
+            // Arrange
+            DiffController diff = new DiffController();
+            var result = diff.GetDiff(1);
+
+            //// Act
+            //controller.Post("value");
+
+            // Assert
+        }
         #endregion
     }
 }

@@ -6,6 +6,8 @@ C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Infra.Data\bin\Debug
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Infra.Data\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Infra.Data\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Infra.Data\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Infra.Data\bin\Debug\WAES.Domain.dll
+C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Infra.Data\bin\Debug\WAES.Domain.pdb
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Infra.Data\bin\Debug\EntityFramework.xml
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Infra.Data\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Infra.Data\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
@@ -15,5 +17,3 @@ C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Infra.Data\bin\Debug
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Infra.Data\obj\Debug\WAES.Infra.Data.csprojResolveAssemblyReference.cache
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Infra.Data\obj\Debug\WAES.Infra.Data.dll
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Infra.Data\obj\Debug\WAES.Infra.Data.pdb
-C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Infra.Data\bin\Debug\WAES.Domain.dll
-C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Infra.Data\bin\Debug\WAES.Domain.pdb
