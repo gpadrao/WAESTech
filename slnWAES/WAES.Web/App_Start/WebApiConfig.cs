@@ -15,7 +15,7 @@ namespace WAES.Web
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
-            config.Services.Replace(typeof(IHttpControllerSelector), new ApiVersioningSelector((config)));
+            //config.Services.Replace(typeof(IHttpControllerSelector), new ApiVersioningSelector((config)));
 
             config.Formatters.Clear();
             config.Formatters.Add(new JsonMediaTypeFormatter());

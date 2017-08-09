@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
 using System.Web.Http.Description;
-
+using WAES.Application.Interfaces;
 using WAES.Application.ViewModels;
 
 namespace WAES.Web.Controllers
@@ -18,6 +18,11 @@ namespace WAES.Web.Controllers
     [RoutePrefix("v1/diff")]
     public class DiffController : ApiController
     {
+        private readonly IManageImagesAppService _manageImagesAppService; 
+        public DiffController(IManageImagesAppService manageImagesAppService)
+        {
+            _manageImagesAppService = manageImagesAppService;
+        }
         [HttpPost]
         [Route("{id}/left")]
         [AllowAnonymous]

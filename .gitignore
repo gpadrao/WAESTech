@@ -3,3 +3,9 @@
 bin
 obj
 packages
+slnWAES/.vs/slnWAES/v15/.suo
+slnWAES/WAES.Application/bin/Debug/WAES.Application.dll
+*.pdb
+*.dll
+*.cache
+slnWAES/WAES.Domain/obj/Debug/WAES.Domain.csproj.FileListAbsolute.txt
