@@ -1,0 +1,15 @@
+CREATE TABLE [dbo].[WAESImage](
+	[WAESImageId] [uniqueidentifier] NOT NULL,
+	[ImageContent] [varbinary](max) NULL,
+	[IdCompare] [int] NOT NULL,
+	[Side] [int] NOT NULL
+ CONSTRAINT [PK_dbo.WAESImage] PRIMARY KEY CLUSTERED 
+(
+	[WAESImageId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+
+
+

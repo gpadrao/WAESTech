@@ -180,3 +180,4 @@ C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Web\bin\EntityFramew
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Web\bin\Ninject.xml
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Web\bin\Ninject.Web.Common.xml
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Web\bin\Ninject.Web.WebApi.xml
+C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Web\bin\AutoMapper.Net4.dll
