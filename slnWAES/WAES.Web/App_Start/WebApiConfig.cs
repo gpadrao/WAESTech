@@ -5,6 +5,7 @@ using System.Net.Http.Formatting;
 using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Dispatcher;
+using WAES.Infra.CrossCutting.IoC;
 using WebApiMediaTypeVersioning.Services.Versioning;
 
 namespace WAES.Web
@@ -34,7 +35,7 @@ namespace WAES.Web
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
-
+            GlobalConfiguration.Configuration.DependencyResolver = new NinjectResolver(new Container().GetModule());
             //SwaggerConfig.Register();
         }
     }
