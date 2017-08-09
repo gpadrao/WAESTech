@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WAES.Web", "WAES.Web\WAES.Web.csproj", "{64DA0217-3568-4E0B-B2B3-007B694C2940}"
 EndProject
@@ -23,6 +23,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 -
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WAES.Application", "WAES.Application\WAES.Application.csproj", "{D737CC74-829F-4B31-8D2F-134446ABFDC1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WAES.Infra.Data", "WAES.Infra.Data\WAES.Infra.Data.csproj", "{23170F66-449B-4BB5-931E-126E8C401BA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WAES.Domain", "WAES.Domain\WAES.Domain.csproj", "{FE665544-D580-4F31-8F12-8C940E13D88A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WAES.Infra.CrossCutting.IoC", "WAES.Infra.CrossCutting.IoC\WAES.Infra.CrossCutting.IoC.csproj", "{0FFD3EC5-D400-4B8D-B456-1B1E6F08845E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WAES.Infra.CrossCutting.Utilities", "WAES.Infra.CrossCutting.Utilities\WAES.Infra.CrossCutting.Utilities.csproj", "{B734FC7D-8E5E-4A4A-B1C9-5C638D184C46}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +49,22 @@ Global
 		{D737CC74-829F-4B31-8D2F-134446ABFDC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D737CC74-829F-4B31-8D2F-134446ABFDC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D737CC74-829F-4B31-8D2F-134446ABFDC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23170F66-449B-4BB5-931E-126E8C401BA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23170F66-449B-4BB5-931E-126E8C401BA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23170F66-449B-4BB5-931E-126E8C401BA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23170F66-449B-4BB5-931E-126E8C401BA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE665544-D580-4F31-8F12-8C940E13D88A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE665544-D580-4F31-8F12-8C940E13D88A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE665544-D580-4F31-8F12-8C940E13D88A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE665544-D580-4F31-8F12-8C940E13D88A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FFD3EC5-D400-4B8D-B456-1B1E6F08845E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FFD3EC5-D400-4B8D-B456-1B1E6F08845E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FFD3EC5-D400-4B8D-B456-1B1E6F08845E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FFD3EC5-D400-4B8D-B456-1B1E6F08845E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B734FC7D-8E5E-4A4A-B1C9-5C638D184C46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B734FC7D-8E5E-4A4A-B1C9-5C638D184C46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B734FC7D-8E5E-4A4A-B1C9-5C638D184C46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B734FC7D-8E5E-4A4A-B1C9-5C638D184C46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,5 +75,12 @@ Global
 		{EE89C586-1F7B-4046-A799-3369BAA4F837} = {3DC5FF8F-A3BD-479A-9CF3-63D7D576C314}
 		{E020B9F6-05A1-4D09-866E-E526F2263BC8} = {3DC5FF8F-A3BD-479A-9CF3-63D7D576C314}
 		{D737CC74-829F-4B31-8D2F-134446ABFDC1} = {61D466C0-D0C3-47FD-B290-77AC5C2D1345}
+		{23170F66-449B-4BB5-931E-126E8C401BA4} = {EE89C586-1F7B-4046-A799-3369BAA4F837}
+		{FE665544-D580-4F31-8F12-8C940E13D88A} = {C79E4D31-2A65-4DD0-9007-0AD7DE736231}
+		{0FFD3EC5-D400-4B8D-B456-1B1E6F08845E} = {E020B9F6-05A1-4D09-866E-E526F2263BC8}
+		{B734FC7D-8E5E-4A4A-B1C9-5C638D184C46} = {E020B9F6-05A1-4D09-866E-E526F2263BC8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45
 	EndGlobalSection
 EndGlobal
