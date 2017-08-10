@@ -143,10 +143,8 @@ C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web.Tests\bin\Debug\WAES.Infra.Cr
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web.Tests\bin\Debug\WAES.Infra.CrossCutting.IoC.dll.config
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web.Tests\bin\Debug\EntityFramework.xml
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web.Tests\bin\Debug\Ninject.Web.Common.dll
-C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web.Tests\bin\Debug\Ninject.Web.WebApi.dll
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web.Tests\bin\Debug\WAES.Application.dll.config
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web.Tests\bin\Debug\Ninject.Web.Common.xml
-C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web.Tests\bin\Debug\Ninject.Web.WebApi.xml
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web.Tests\bin\Debug\AutoMapper.Net4.dll
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web.Tests\bin\Debug\roslyn\csc.exe
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web.Tests\bin\Debug\roslyn\csc.exe.config
@@ -174,3 +172,9 @@ C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web.Tests\bin\Debug\roslyn\vbc.ex
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web.Tests\bin\Debug\roslyn\vbc.rsp
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web.Tests\bin\Debug\roslyn\VBCSCompiler.exe
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web.Tests\bin\Debug\roslyn\VBCSCompiler.exe.config
+C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web.Tests\bin\Debug\Castle.Core.dll
+C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web.Tests\bin\Debug\Moq.dll
+C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web.Tests\bin\Debug\nunit.framework.dll
+C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web.Tests\bin\Debug\Moq.pdb
+C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web.Tests\bin\Debug\Moq.xml
+C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web.Tests\bin\Debug\nunit.framework.xml
