@@ -207,3 +207,4 @@ C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\AutoMapper.xml
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\Microsoft.Practices.ServiceLocation.pdb
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\Microsoft.Practices.ServiceLocation.xml
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\WAES.Domain.pdb
+C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\AutoMapper.Net4.dll

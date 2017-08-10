@@ -8,6 +8,7 @@ namespace WAES.Application.ViewModels
 {
     public class ValidationResultViewModel
     {
+        public int Result { get; set; }
         public string Message { get; set; }
     }
 }

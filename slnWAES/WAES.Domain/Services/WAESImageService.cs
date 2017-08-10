@@ -11,13 +11,22 @@ namespace WAES.Domain.Services
 {
     public class WAESImageService : ServiceBase<WAESImage>, IWAESImageService
     {
-        public WAESImageService(IRepositoryBase<WAESImage> repository) : base(repository)
+        private readonly IWAESImageRepository _waesImageRepository;
+       
+        public WAESImageService(IRepositoryBase<WAESImage> repository,
+                                IWAESImageRepository waesImageRepository) : base(repository)
         {
+            _waesImageRepository = waesImageRepository;
         }
 
         public IEnumerable<WAESImage> GetAllBySenderId(int idCompare)
         {
             throw new NotImplementedException();
+        }
+
+        public WAESImage GetBySenderIdAndSide(int idCompare, int side)
+        {
+            return _waesImageRepository.Find(x => x.IdCompare.Equals(idCompare) && x.Side.Equals(side)).FirstOrDefault();
         }
     }
 }

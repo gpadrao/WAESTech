@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Threading.Tasks;
-using System.Web;
-using System.Web.Http;
+﻿using System.Web.Http;
 using System.Web.Http.Description;
 using WAES.Application.Interfaces;
 using WAES.Application.ViewModels;
+using WAES.Infra.CrossCutting.Utilities;
 
 namespace WAES.Web.Controllers
 {
@@ -30,10 +24,7 @@ namespace WAES.Web.Controllers
         public ValidationResultViewModel InputLeftImage(int id, IncomeImageViewModel model)
         {
 
-            return new ValidationResultViewModel()
-            {
-                Message = "Voltou"
-            };
+            return _manageImagesAppService.AddImage(id, model, Constants.ImageSide.Left);
         }
         [HttpPost]
         [Route("{id}/right")]
@@ -42,10 +33,7 @@ namespace WAES.Web.Controllers
         public ValidationResultViewModel InputRightmage(int id, IncomeImageViewModel model)
         {
 
-            return new ValidationResultViewModel()
-            {
-                Message = "Voltou"
-            };
+            return _manageImagesAppService.AddImage(id, model, Constants.ImageSide.Right);
         }
         [HttpGet]
         [Route("{id}")]
@@ -53,10 +41,7 @@ namespace WAES.Web.Controllers
         [ResponseType(typeof(ValidationResultViewModel))]
         public ValidationResultViewModel GetDiff(int id)
         {
-            return new ValidationResultViewModel()
-            {
-                Message = "Voltou"
-            };
+            return _manageImagesAppService.CompareImages(id);
         }
 
 
