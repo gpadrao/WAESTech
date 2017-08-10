@@ -31,6 +31,7 @@ namespace WAES.Web.Tests.Controllers
         }
         #region Differente images, but same size
         [TestMethod]
+        [Description("Comparing two images, with the same size, but they don't have the same content.")]
         public async Task CompareRightDifferentOfLeftImageWithSameSizeAsync()
         {
 

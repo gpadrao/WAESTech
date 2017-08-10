@@ -94,7 +94,7 @@ namespace WAES.Application
                     if (numberOfDiffs > 0)
                     {
                         modelReturn = MountReturn(Constants.PossibleReturns.SAME_SIZE_DIFFERENT);
-                        modelReturn.Message = String.Format(modelReturn.Message, idCompare, numberOfDiffs);
+                        modelReturn.Message = String.Format(modelReturn.Message, idCompare);
                     }
                     else
                     {
