@@ -14,3 +14,5 @@ slnWAES/WAES.Domain/obj/Debug/WAES.Domain.csproj.FileListAbsolute.txt
 *.cache
 *.dll
 *.pdb
+*.dll
+*.pdb
