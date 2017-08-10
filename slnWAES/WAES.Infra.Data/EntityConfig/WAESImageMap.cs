@@ -16,7 +16,7 @@ namespace WAES.Infra.Data.EntityConfig
             Property(x => x.IdCompare).IsRequired();
             Property(x => x.ImageContent).IsRequired();
             Property(x => x.Side).IsRequired();
-
+            Ignore(x => x.ValidationResult);
         }
     }
 }

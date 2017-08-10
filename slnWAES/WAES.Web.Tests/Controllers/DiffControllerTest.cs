@@ -15,7 +15,7 @@ using WAES.Web.Controllers;
 namespace WAES.Web.Tests.Controllers
 {
     //http://jpillora.com/base64-encoder/
-    //http://blog.stevensanderson.com/2009/06/11/integration-testing-your-aspnet-mvc-application/
+
 
     [TestClass]
     public class DiffControllerTest

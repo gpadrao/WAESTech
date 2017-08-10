@@ -1,10 +1,12 @@
-C:\workspace\luis\github\WAESTech\slnWAES\WAES.Domain\bin\Debug\WAES.Domain.dll
-C:\workspace\luis\github\WAESTech\slnWAES\WAES.Domain\bin\Debug\WAES.Domain.pdb
-C:\workspace\luis\github\WAESTech\slnWAES\WAES.Domain\obj\Debug\WAES.Domain.csprojResolveAssemblyReference.cache
-C:\workspace\luis\github\WAESTech\slnWAES\WAES.Domain\obj\Debug\WAES.Domain.dll
-C:\workspace\luis\github\WAESTech\slnWAES\WAES.Domain\obj\Debug\WAES.Domain.pdb
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Domain\bin\Debug\WAES.Domain.dll
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Domain\bin\Debug\WAES.Domain.pdb
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Domain\obj\Debug\WAES.Domain.csprojResolveAssemblyReference.cache
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Domain\obj\Debug\WAES.Domain.dll
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Domain\obj\Debug\WAES.Domain.pdb
+C:\workspace\luis\github\WAESTech\slnWAES\WAES.Domain\bin\Debug\WAES.Domain.dll
+C:\workspace\luis\github\WAESTech\slnWAES\WAES.Domain\bin\Debug\WAES.Domain.pdb
+C:\workspace\luis\github\WAESTech\slnWAES\WAES.Domain\bin\Debug\WAES.Infra.CrossCutting.Utilities.dll
+C:\workspace\luis\github\WAESTech\slnWAES\WAES.Domain\bin\Debug\WAES.Infra.CrossCutting.Utilities.pdb
+C:\workspace\luis\github\WAESTech\slnWAES\WAES.Domain\obj\Debug\WAES.Domain.csprojResolveAssemblyReference.cache
+C:\workspace\luis\github\WAESTech\slnWAES\WAES.Domain\obj\Debug\WAES.Domain.dll
+C:\workspace\luis\github\WAESTech\slnWAES\WAES.Domain\obj\Debug\WAES.Domain.pdb

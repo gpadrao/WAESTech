@@ -1,0 +1,5 @@
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\b\WAES.Domain\bin\Debug\WAES.Domain.dll
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\b\WAES.Domain\bin\Debug\WAES.Domain.pdb
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\i\WAES.Domain\Debug\WAES.Domain.csprojResolveAssemblyReference.cache
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\i\WAES.Domain\Debug\WAES.Domain.dll
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\i\WAES.Domain\Debug\WAES.Domain.pdb

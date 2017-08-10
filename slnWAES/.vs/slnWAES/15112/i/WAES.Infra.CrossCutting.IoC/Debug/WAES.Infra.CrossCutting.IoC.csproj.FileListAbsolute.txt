@@ -1,0 +1,7 @@
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\b\WAES.Infra.CrossCutting.IoC\bin\Debug\AutoMapper.Net4.dll
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\b\WAES.Infra.CrossCutting.IoC\bin\Debug\WAES.Infra.CrossCutting.IoC.dll.config
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\b\WAES.Infra.CrossCutting.IoC\bin\Debug\WAES.Infra.CrossCutting.IoC.dll
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\b\WAES.Infra.CrossCutting.IoC\bin\Debug\WAES.Infra.CrossCutting.IoC.pdb
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\i\WAES.Infra.CrossCutting.IoC\Debug\WAES.Infra.CrossCutting.IoC.csprojResolveAssemblyReference.cache
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\i\WAES.Infra.CrossCutting.IoC\Debug\WAES.Infra.CrossCutting.IoC.dll
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\i\WAES.Infra.CrossCutting.IoC\Debug\WAES.Infra.CrossCutting.IoC.pdb

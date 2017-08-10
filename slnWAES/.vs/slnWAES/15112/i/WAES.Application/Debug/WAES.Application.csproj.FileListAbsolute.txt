@@ -1,0 +1,7 @@
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\b\WAES.Application\bin\Debug\AutoMapper.Net4.dll
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\b\WAES.Application\bin\Debug\WAES.Application.dll.config
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\b\WAES.Application\bin\Debug\WAES.Application.dll
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\b\WAES.Application\bin\Debug\WAES.Application.pdb
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\i\WAES.Application\Debug\WAES.Application.csprojResolveAssemblyReference.cache
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\i\WAES.Application\Debug\WAES.Application.dll
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\i\WAES.Application\Debug\WAES.Application.pdb
