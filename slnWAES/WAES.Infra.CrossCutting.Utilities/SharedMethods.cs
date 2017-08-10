@@ -45,7 +45,12 @@ namespace WAES.Infra.CrossCutting.Utilities
                     Color c1 = bmp1.GetPixel(x, y);
                     Color c2 = bmp2.GetPixel(x, y);
                     if (c1 != c2)
+                    {
                         numberOfDifferences++;
+                        return areEqual;
+                    }
+                        
+                        
                 }
             return areEqual;
         }

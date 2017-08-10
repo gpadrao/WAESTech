@@ -37,17 +37,11 @@
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
-    <Reference Include="Moq, Version=4.7.99.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
-      <HintPath>..\packages\Moq.4.7.99\lib\net45\Moq.dll</HintPath>
-    </Reference>
     <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+      <HintPath>..\packages\Ninject.3.2.0.0\lib\net45-full\Ninject.dll</HintPath>
     </Reference>
     <Reference Include="Ninject.Web.Common, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
       <HintPath>..\packages\Ninject.Web.Common.3.2.3.0\lib\net45-full\Ninject.Web.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.framework, Version=3.7.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnit.3.7.1\lib\net45\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -118,6 +112,10 @@
     <ProjectReference Include="..\WAES.Application\WAES.Application.csproj">
       <Project>{D737CC74-829F-4B31-8D2F-134446ABFDC1}</Project>
       <Name>WAES.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WAES.Infra.CrossCutting.Utilities\WAES.Infra.CrossCutting.Utilities.csproj">
+      <Project>{B734FC7D-8E5E-4A4A-B1C9-5C638D184C46}</Project>
+      <Name>WAES.Infra.CrossCutting.Utilities</Name>
     </ProjectReference>
     <ProjectReference Include="..\WAES.Web\WAES.Web.csproj">
       <Project>{64DA0217-3568-4E0B-B2B3-007B694C2940}</Project>

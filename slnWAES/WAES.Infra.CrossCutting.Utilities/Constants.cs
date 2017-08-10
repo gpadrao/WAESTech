@@ -26,7 +26,7 @@ namespace WAES.Infra.CrossCutting.Utilities
             EQUAL_FILES = 3,
             [Description("Files of ID '{0}' are differents")]
             DIFFERENT_FILES = 4,
-            [Description("Files of ID '{0}' have the same size, but they differ in '{1}' pixels.")]
+            [Description("Files of ID '{0}' have the same size, but they differ at least one pixel.")]
             SAME_SIZE_DIFFERENT = 5,
             [Description("File of ID '{0}' saved successfully.")]
             SUCCESSFULLY_SAVED = 6,
