@@ -4,6 +4,10 @@ namespace WAES.Domain.Entities
 {
     public class WAESImage
     {
+        public WAESImage()
+        {
+            WAESImageId = Guid.NewGuid();
+        }
         /// <summary>
         /// PrimaryKey
         /// </summary>

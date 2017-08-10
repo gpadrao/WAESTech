@@ -38,3 +38,6 @@ C:\workspace\luis\github\WAESTech\slnWAES\WAES.Application\bin\Debug\AutoMapper.
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Application\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Application\bin\Debug\Microsoft.Practices.ServiceLocation.xml
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Application\bin\Debug\EntityFramework.xml
+C:\workspace\luis\github\WAESTech\slnWAES\WAES.Application\bin\Debug\WAES.Application.dll.config
+C:\workspace\luis\github\WAESTech\slnWAES\WAES.Application\bin\Debug\EntityFramework.SqlServer.dll
+C:\workspace\luis\github\WAESTech\slnWAES\WAES.Application\bin\Debug\EntityFramework.SqlServer.xml

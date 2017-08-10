@@ -21,7 +21,7 @@ namespace WAES.Domain.Services
 
         public IEnumerable<WAESImage> GetAllBySenderId(int idCompare)
         {
-            throw new NotImplementedException();
+            return _waesImageRepository.Find(x => x.IdCompare.Equals(idCompare)).ToList();
         }
 
         public WAESImage GetBySenderIdAndSide(int idCompare, int side)

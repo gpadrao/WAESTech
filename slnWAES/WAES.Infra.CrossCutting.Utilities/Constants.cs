@@ -16,7 +16,7 @@ namespace WAES.Infra.CrossCutting.Utilities
         }
         public enum PossibleReturns
         {
-            [Description("{0} file not found.")]
+            [Description("'{0}' file not found.")]
             FILE_NOT_FOUND = 0,
             [Description("Invalid Base64 parameter.")]
             INVALID_BASE64_PARAMETER = 1,
@@ -29,7 +29,9 @@ namespace WAES.Infra.CrossCutting.Utilities
             [Description("Files of ID '{0}' have the same size, but they differ in '{1}' pixels.")]
             SAME_SIZE_DIFFERENT = 5,
             [Description("File of ID '{0}' saved successfully.")]
-            SUCCESSFULLY_SAVED = 5
+            SUCCESSFULLY_SAVED = 6,
+            [Description("Error trying to save.")]
+            ERROR = 7
         }
     }
 }

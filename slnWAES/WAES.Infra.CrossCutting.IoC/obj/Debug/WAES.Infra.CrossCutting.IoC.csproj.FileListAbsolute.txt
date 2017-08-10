@@ -28,7 +28,6 @@ C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Infra.CrossCutting.I
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Infra.CrossCutting.IoC\obj\Debug\WAES.Infra.CrossCutting.IoC.csprojResolveAssemblyReference.cache
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Infra.CrossCutting.IoC\obj\Debug\WAES.Infra.CrossCutting.IoC.dll
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Infra.CrossCutting.IoC\obj\Debug\WAES.Infra.CrossCutting.IoC.pdb
-C:\workspace\luis\github\WAESTech\slnWAES\WAES.Infra.CrossCutting.IoC\bin\Debug\AutoMapper.Net4.dll
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Infra.CrossCutting.IoC\bin\Debug\WAES.Infra.CrossCutting.IoC.dll.config
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Infra.CrossCutting.IoC\bin\Debug\WAES.Infra.CrossCutting.IoC.dll
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Infra.CrossCutting.IoC\bin\Debug\WAES.Infra.CrossCutting.IoC.pdb
@@ -58,3 +57,5 @@ C:\workspace\luis\github\WAESTech\slnWAES\WAES.Infra.CrossCutting.IoC\bin\Debug\
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Infra.CrossCutting.IoC\obj\Debug\WAES.Infra.CrossCutting.IoC.csprojResolveAssemblyReference.cache
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Infra.CrossCutting.IoC\obj\Debug\WAES.Infra.CrossCutting.IoC.dll
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Infra.CrossCutting.IoC\obj\Debug\WAES.Infra.CrossCutting.IoC.pdb
+C:\workspace\luis\github\WAESTech\slnWAES\WAES.Infra.CrossCutting.IoC\bin\Debug\WAES.Application.dll.config
+C:\workspace\luis\github\WAESTech\slnWAES\WAES.Infra.CrossCutting.IoC\bin\Debug\AutoMapper.Net4.dll

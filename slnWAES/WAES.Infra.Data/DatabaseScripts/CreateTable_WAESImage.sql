@@ -11,5 +11,8 @@ CREATE TABLE [dbo].[WAESImage](
 
 GO
 
+ALTER TABLE [dbo].[WAESImage] ADD  CONSTRAINT [DF_WAESImage_WAESImageId]  DEFAULT (newid()) FOR [WAESImageId]
+GO
+
 
 

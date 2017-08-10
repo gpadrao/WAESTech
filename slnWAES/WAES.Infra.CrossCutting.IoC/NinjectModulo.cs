@@ -15,6 +15,17 @@ namespace WAES.Infra.CrossCutting.IoC
     {
         public override void Load()
         {
+            
+            
+            // data configs
+            Bind(typeof(IContextManager<>)).To(typeof(ContextManager<>));
+            Bind<IDbContext>().To<WAESModelContext>();
+            Bind(typeof(IUnitOfWork<>)).To(typeof(UnitOfWork<>));
+
+            // data repos
+            Bind(typeof(IRepositoryBase<>)).To(typeof(RepositoryBase<>));
+            Bind<IWAESImageRepository>().To<WAESImageRepository>();
+
             // app
             Bind<IManageImagesAppService>().To<ManageImagesAppService>();
 
@@ -22,14 +33,6 @@ namespace WAES.Infra.CrossCutting.IoC
             Bind(typeof(IServiceBase<>)).To(typeof(ServiceBase<>));
             Bind<IWAESImageService>().To<WAESImageService>();
 
-            // data repos
-            Bind(typeof(IRepositoryBase<>)).To(typeof(RepositoryBase<,>));
-            Bind<IWAESImageRepository>().To<WAESImageRepository>();
-
-            // data configs
-            Bind(typeof(IContextManager<>)).To(typeof(ContextManager<>));
-            Bind<IDbContext>().To<WAESModelContext>();
-            Bind(typeof(IUnitOfWork<>)).To(typeof(UnitOfWork<>));
         }
     }
 }

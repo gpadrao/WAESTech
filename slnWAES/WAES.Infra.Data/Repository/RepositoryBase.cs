@@ -10,11 +10,11 @@ using WAES.Infra.Data.Interfaces;
 
 namespace WAES.Infra.Data.Repository
 {
-    public class RepositoryBase<TEntity, TContext> : IRepositoryBase<TEntity>
+    public class RepositoryBase<TEntity> : IRepositoryBase<TEntity>
         where TEntity : class
-        where TContext : IDbContext, new()
+       , new()
     {
-        private readonly ContextManager<TContext> _contextManager = ServiceLocator.Current.GetInstance<IContextManager<TContext>>() as ContextManager<TContext>;
+        private readonly ContextManager<WAESModelContext> _contextManager = ServiceLocator.Current.GetInstance<IContextManager<WAESModelContext>>() as ContextManager<WAESModelContext>;
 
         protected IDbSet<TEntity> DbSet;
         protected readonly IDbContext Context;
