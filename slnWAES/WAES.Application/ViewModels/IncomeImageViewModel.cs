@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WAES.Application.ViewModels
+﻿namespace WAES.Application.ViewModels
 {
+    /// <summary>
+    /// Model that will provide the method signature for sending images
+    /// </summary>
     public class IncomeImageViewModel
     {
+        /// <summary>
+        /// base64 encoded binary data
+        /// </summary>
         public string Base64Image { get; set; }
     }
 }

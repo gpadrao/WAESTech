@@ -1,8 +1,11 @@
 ﻿using System;
+using WAES.Domain.Interfaces.Validation;
+using WAES.Domain.ValueObjects;
+using WAES.Infra.CrossCutting.Utilities;
 
 namespace WAES.Domain.Entities
 {
-    public class WAESImage
+    public class WAESImage : ISelfValidator
     {
         public WAESImage()
         {
@@ -24,5 +27,12 @@ namespace WAES.Domain.Entities
         /// Defines from where the images comes  '0 - Right' or '1 - Left'
         /// </summary>
         public int Side { get; set; }
+
+        public ValidationResult ValidationResult { get; private set; }
+
+        public bool IsValid()
+        {
+            return this.IdCompare > 0 && (this.Side.Equals((int)Constants.ImageSide.Left) || this.Side.Equals((int)Constants.ImageSide.Right)) && this.ImageContent != null;
+        }
     }
 }

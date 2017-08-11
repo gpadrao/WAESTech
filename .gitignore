@@ -17,3 +17,8 @@ slnWAES/WAES.Domain/obj/Debug/WAES.Domain.csproj.FileListAbsolute.txt
 *.dll
 *.pdb
 slnWAES/.vs/slnWAES/v15/.suo
+*.dll
+slnWAES/.vs/config/applicationhost.config
+*.pdb
+slnWAES/WAES.Application/obj/Debug/WAES.Application.csprojResolveAssemblyReference.cache
+slnWAES/WAES.Application/obj/Debug/CoreCompileInputs.cache

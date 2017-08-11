@@ -1,0 +1,6 @@
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\b\WAES.Infra.Data\bin\Debug\WAES.Infra.Data.dll.config
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\b\WAES.Infra.Data\bin\Debug\WAES.Infra.Data.dll
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\b\WAES.Infra.Data\bin\Debug\WAES.Infra.Data.pdb
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\i\WAES.Infra.Data\Debug\WAES.Infra.Data.csprojResolveAssemblyReference.cache
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\i\WAES.Infra.Data\Debug\WAES.Infra.Data.dll
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\i\WAES.Infra.Data\Debug\WAES.Infra.Data.pdb

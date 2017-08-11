@@ -33,22 +33,23 @@ namespace WAES.Application
                     item = new WAESImage()
                     {
                         IdCompare = idCompare,
-                        ImageContent = Convert.FromBase64String(model.Base64Image),
                         Side = (int)imageSide
                     };
                 }
-                else
-                {
-                    item.ImageContent = Convert.FromBase64String(model.Base64Image);
-                }
-
+                item.ImageContent = Convert.FromBase64String(model.Base64Image);
                 try
                 {
                     BeginTransaction();
                     if (isInsert)
+                    {
                         _waesImageService.Add(item);
+
+                    }
                     else
+                    {
                         _waesImageService.Update(item);
+
+                    }
                     Commit();
                     
                     modelReturn = MountReturn(Constants.PossibleReturns.SUCCESSFULLY_SAVED);
@@ -75,63 +76,62 @@ namespace WAES.Application
             int left = (int)Constants.ImageSide.Left;
             int right = (int)Constants.ImageSide.Right;
             List<WAESImage> listItems = _waesImageService.GetAllBySenderId(idCompare).ToList();
-            if (listItems.Count() == 2)
+            switch (listItems.Count())
             {
-                int numberOfDiffs = 0;
-                Bitmap bmpLeft;
-                using (var ms = new MemoryStream(listItems.Where(x => x.Side.Equals(left)).FirstOrDefault().ImageContent))
-                {
-                    bmpLeft = new Bitmap(ms);
-                }
-                Bitmap bmpRight;
-                using (var ms = new MemoryStream(listItems.Where(x => x.Side.Equals(right)).FirstOrDefault().ImageContent))
-                {
-                    bmpRight = new Bitmap(ms);
-                }
+                case 0:
+                    {
 
-                if (SharedMethods.GetDifferenceBetweenImages(bmpLeft, bmpRight, ref numberOfDiffs))
-                {
-                    if (numberOfDiffs > 0)
-                    {
-                        modelReturn = MountReturn(Constants.PossibleReturns.SAME_SIZE_DIFFERENT);
+                        modelReturn = MountReturn(Constants.PossibleReturns.NO_FILES);
                         modelReturn.Message = String.Format(modelReturn.Message, idCompare);
+                        break;
                     }
-                    else
+                case 1:
                     {
-                        modelReturn = MountReturn(Constants.PossibleReturns.EQUAL_FILES);
-                        modelReturn.Message = String.Format(modelReturn.Message, idCompare);
-                    }
-                }
-                else {
-                    modelReturn = MountReturn(Constants.PossibleReturns.DIFFERENT_FILES);
-                    modelReturn.Message = String.Format(modelReturn.Message, idCompare);
-                }
-            }
-            else
-            {
-                switch (listItems.Count())
-                {
-                    case 0:
+                        modelReturn = MountReturn(Constants.PossibleReturns.FILE_NOT_FOUND);
+                        string messageSide = "Left";
+                        WAESImage item = _waesImageService.GetBySenderIdAndSide(idCompare, left);
+                        if (item != null)
                         {
-
-                            modelReturn =  MountReturn(Constants.PossibleReturns.NO_FILES);
-                            modelReturn.Message = String.Format(modelReturn.Message, idCompare);
-                            break;
+                            messageSide = "Right";
                         }
-                    case 1:
+                        modelReturn.Message = String.Format(modelReturn.Message, messageSide);
+                        break;
+                    }
+                case 2:
+                    {
+                        int numberOfDiffs = 0;
+                        Bitmap bmpLeft;
+                        using (var ms = new MemoryStream(listItems.Where(x => x.Side.Equals(left)).FirstOrDefault().ImageContent))
                         {
-                            modelReturn = MountReturn(Constants.PossibleReturns.FILE_NOT_FOUND);
-                            string messageSide = "Left";
-                            WAESImage item = _waesImageService.GetBySenderIdAndSide(idCompare, left);
-                            if (item != null)
+                            bmpLeft = new Bitmap(ms);
+                        }
+                        Bitmap bmpRight;
+                        using (var ms = new MemoryStream(listItems.Where(x => x.Side.Equals(right)).FirstOrDefault().ImageContent))
+                        {
+                            bmpRight = new Bitmap(ms);
+                        }
+
+                        if (SharedMethods.GetDifferenceBetweenImages(bmpLeft, bmpRight, ref numberOfDiffs))
+                        {
+                            if (numberOfDiffs > 0)
                             {
-                                messageSide = "Right";
+                                modelReturn = MountReturn(Constants.PossibleReturns.SAME_SIZE_DIFFERENT);
+                                modelReturn.Message = String.Format(modelReturn.Message, idCompare);
                             }
-                            modelReturn.Message = String.Format(modelReturn.Message, messageSide);
-                            break;
+                            else
+                            {
+                                modelReturn = MountReturn(Constants.PossibleReturns.EQUAL_FILES);
+                                modelReturn.Message = String.Format(modelReturn.Message, idCompare);
+                            }
                         }
+                        else
+                        {
+                            modelReturn = MountReturn(Constants.PossibleReturns.DIFFERENT_FILES);
+                            modelReturn.Message = String.Format(modelReturn.Message, idCompare);
+                        }
+                        break;
+                    }
 
-                }
             }
             return modelReturn;
         }

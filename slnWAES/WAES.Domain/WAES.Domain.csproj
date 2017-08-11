@@ -45,11 +45,17 @@
     <Compile Include="Interfaces\Repositories\IWAESImageRepository.cs" />
     <Compile Include="Interfaces\Services\IServiceBase.cs" />
     <Compile Include="Interfaces\Services\IWAESImageService.cs" />
+    <Compile Include="Interfaces\Validation\ISelfValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ServiceBase.cs" />
     <Compile Include="Services\WAESImageService.cs" />
     <Compile Include="ValueObjects\ValidationResult.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\WAES.Infra.CrossCutting.Utilities\WAES.Infra.CrossCutting.Utilities.csproj">
+      <Project>{B734FC7D-8E5E-4A4A-B1C9-5C638D184C46}</Project>
+      <Name>WAES.Infra.CrossCutting.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

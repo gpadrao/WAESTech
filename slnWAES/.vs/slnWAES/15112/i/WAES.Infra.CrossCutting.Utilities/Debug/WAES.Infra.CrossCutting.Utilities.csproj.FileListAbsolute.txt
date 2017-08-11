@@ -1,0 +1,5 @@
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\b\WAES.Infra.CrossCutting.Utilities\bin\Debug\WAES.Infra.CrossCutting.Utilities.dll
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\b\WAES.Infra.CrossCutting.Utilities\bin\Debug\WAES.Infra.CrossCutting.Utilities.pdb
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\i\WAES.Infra.CrossCutting.Utilities\Debug\WAES.Infra.CrossCutting.Utilities.csprojResolveAssemblyReference.cache
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\i\WAES.Infra.CrossCutting.Utilities\Debug\WAES.Infra.CrossCutting.Utilities.dll
+C:\workspace\luis\github\WAESTech\slnWAES\.vs\slnWAES\15112\i\WAES.Infra.CrossCutting.Utilities\Debug\WAES.Infra.CrossCutting.Utilities.pdb

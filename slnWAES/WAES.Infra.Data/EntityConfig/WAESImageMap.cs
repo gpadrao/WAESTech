@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity.ModelConfiguration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.Entity.ModelConfiguration;
 using WAES.Domain.Entities;
 
 namespace WAES.Infra.Data.EntityConfig
@@ -16,7 +11,7 @@ namespace WAES.Infra.Data.EntityConfig
             Property(x => x.IdCompare).IsRequired();
             Property(x => x.ImageContent).IsRequired();
             Property(x => x.Side).IsRequired();
-
+            Ignore(x => x.ValidationResult);
         }
     }
 }
