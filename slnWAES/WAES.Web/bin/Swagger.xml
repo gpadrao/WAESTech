@@ -486,6 +486,44 @@
             
             </summary>
         </member>
+        <member name="M:WAES.Web.Controllers.DiffController.#ctor(WAES.Application.Interfaces.IManageImagesAppService)">
+            <summary>
+            Api Controller that will receive all incoming request and redirect to a specific route/action
+            </summary>
+            <param name="manageImagesAppService"></param>
+        </member>
+        <member name="M:WAES.Web.Controllers.DiffController.InputLeftImage(System.Int32,WAES.Application.ViewModels.IncomeImageViewModel)">
+            <summary>
+            Method responsible for insert/update a left valid image, that comes from the model and a correspondent Id.
+            </summary>
+            <param name="id">Identifier that should have a pair of images</param>
+            <param name="model">Class that has only one parameter that represents a Base64 string, the parameter name is 'Base64Image'. Will be converted in a binary item</param>
+            <returns>
+            Returns a model with 2 properties, the first one is an int property 'Result' with the properly result of the operation. 
+            The seconde property 'Message' contains a text explaing the result of the operation
+            </returns>
+        </member>
+        <member name="M:WAES.Web.Controllers.DiffController.InputRightmage(System.Int32,WAES.Application.ViewModels.IncomeImageViewModel)">
+            <summary>
+            Method responsible for insert/update a right valid image, that comes from the model and a correspondent Id.
+            </summary>
+            <param name="id">Identifier that should have a pair of images</param>
+            <param name="model">Class that has only one parameter that represents a Base64 string, the parameter name is 'Base64Image'. Will be converted in a binary item</param>
+            <returns>
+            Returns a model with 2 properties, the first one is an int property 'Result' with the properly result of the operation. 
+            The seconde property 'Message' contains a text explaing the result of the operation
+            </returns>
+        </member>
+        <member name="M:WAES.Web.Controllers.DiffController.GetDiff(System.Int32)">
+            <summary>
+            Method responsible for compare both images and return the result.
+            </summary>
+            <param name="id">Identifier that should have a pair of images</param>
+            <returns>
+            Returns a model with 2 properties, the first one is an int property 'Result' with the properly result of the operation. 
+            The seconde property 'Message' contains a text explaing the result of the operation
+            </returns>
+        </member>
         <member name="T:WAES.Web.Controllers.HomeController">
             <summary>
             

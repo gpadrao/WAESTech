@@ -103,7 +103,6 @@ C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Web\bin\Microsoft.Pr
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Web\obj\Debug\WAES.Web.csprojResolveAssemblyReference.cache
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Web\obj\Debug\WAES.Web.dll
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Web\obj\Debug\WAES.Web.pdb
-C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\AutoMapper.Net4.dll
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\ApplicationInsights.config
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\roslyn\csc.exe
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\roslyn\csc.exe.config
