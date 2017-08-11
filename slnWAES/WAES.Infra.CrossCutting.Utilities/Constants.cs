@@ -1,19 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 
 namespace WAES.Infra.CrossCutting.Utilities
 {
     public class Constants
     {
+        /// <summary>
+        /// Values of valid sides, to insert images
+        /// </summary>
         public enum ImageSide
         {
             Left = 0,
             Right = 1
         }
+        /// <summary>
+        /// Enum that contains the possible returns for each type of operation
+        /// </summary>
         public enum PossibleReturns
         {
             [Description("'{0}' file not found.")]

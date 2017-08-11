@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Ninject.MockingKernel.NSubstitute;
 using Ninject;
 using WAES.Infra.CrossCutting.Utilities;
