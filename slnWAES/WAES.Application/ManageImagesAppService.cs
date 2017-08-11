@@ -22,46 +22,47 @@ namespace WAES.Application
         public ValidationResultViewModel AddImage(int idCompare, IncomeImageViewModel model, Constants.ImageSide imageSide)
         {
             ValidationResultViewModel modelReturn = null;
-
+            WAESImage item = _waesImageService.GetBySenderIdAndSide(idCompare, (int)imageSide);
+            if (item != null)
+            {
+                BeginTransaction();
+                _waesImageService.Remove(item);
+                Commit();
+            }
             if (SharedMethods.IsBase64Valid(model.Base64Image))
             {
-                bool isInsert = false;
-                WAESImage item = _waesImageService.GetBySenderIdAndSide(idCompare, (int)imageSide);
-                if (item == null)
+
+                item = new WAESImage()
                 {
-                    isInsert = true;
-                    item = new WAESImage()
-                    {
-                        IdCompare = idCompare,
-                        Side = (int)imageSide
-                    };
-                }
+                    IdCompare = idCompare,
+                    Side = (int)imageSide
+                };
+                
                 item.ImageContent = Convert.FromBase64String(model.Base64Image);
-                try
+                if(item.IsValid())
                 {
-                    BeginTransaction();
-                    if (isInsert)
+                    try
                     {
+                        BeginTransaction();
                         _waesImageService.Add(item);
+                        Commit();
 
+                        modelReturn = MountReturn(Constants.PossibleReturns.SUCCESSFULLY_SAVED);
+                        modelReturn.Message = String.Format(modelReturn.Message, idCompare);
                     }
-                    else
+                    catch (Exception ex)
                     {
-                        _waesImageService.Update(item);
+
+                        modelReturn = MountReturn(Constants.PossibleReturns.ERROR);
+                        modelReturn.Message = modelReturn.Message + " : " + ex.Message;
 
                     }
-                    Commit();
-                    
-                    modelReturn = MountReturn(Constants.PossibleReturns.SUCCESSFULLY_SAVED);
-                    modelReturn.Message = String.Format(modelReturn.Message, idCompare);
                 }
-                catch (Exception ex)
+                else
                 {
-
                     modelReturn = MountReturn(Constants.PossibleReturns.ERROR);
-                    modelReturn.Message = modelReturn.Message + " : " + ex.Message;
-
                 }
+
             }
             else
             {

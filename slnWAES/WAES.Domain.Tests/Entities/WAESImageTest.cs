@@ -16,7 +16,7 @@ namespace WAES.Domain.Tests.Entities
 
         [TestMethod]
         [Description("This test provides validation about trying to persist an instance that its ImageContent property is null")]
-        public void ShallNotAcceptNullContent()
+        public void Shall_Not_Accept_Null_Content()
         {
             _waesImage = new WAESImage() {
 
@@ -30,7 +30,7 @@ namespace WAES.Domain.Tests.Entities
 
         [TestMethod]
         [Description("This test provides validation about trying to persist an instance that its IdCompare property is non positive")]
-        public void ShallNotAcceptNonPositiveId()
+        public void Shall_Not_Accept_Non_PositiveId()
         {
             _waesImage = new WAESImage()
             {
@@ -45,7 +45,7 @@ namespace WAES.Domain.Tests.Entities
 
         [TestMethod]
         [Description("This test provides validation about trying to persist an instance that its Sie property is invalid")]
-        public void ShallNotAcceptInvalidSide()
+        public void Shall_Not_Accept_Invalid_Side()
         {
             _waesImage = new WAESImage()
             {
@@ -60,7 +60,7 @@ namespace WAES.Domain.Tests.Entities
 
         [TestMethod]
         [Description("This test provides validation about trying to persist an instance that all properties are valid")]
-        public void ShallAcceptValidProperties()
+        public void Shall_Accept_Valid_Properties()
         {
             _waesImage = new WAESImage()
             {

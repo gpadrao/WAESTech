@@ -71,6 +71,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ManageImagesAppServiceTest.cs" />
@@ -81,6 +82,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\WAES.Application\WAES.Application.csproj">
+      <Project>{d737cc74-829f-4b31-8d2f-134446abfdc1}</Project>
+      <Name>WAES.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WAES.Domain\WAES.Domain.csproj">
+      <Project>{fe665544-d580-4f31-8f12-8c940e13d88a}</Project>
+      <Name>WAES.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WAES.Infra.CrossCutting.Utilities\WAES.Infra.CrossCutting.Utilities.csproj">
       <Project>{b734fc7d-8e5e-4a4a-b1c9-5c638d184c46}</Project>
       <Name>WAES.Infra.CrossCutting.Utilities</Name>

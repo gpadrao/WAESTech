@@ -70,7 +70,7 @@ namespace WAES.Web.Tests.Controllers
         {
             _currentId = 2;
             string _leftImageEmpty = "";
-            string _rightImageInvalidBase64Value = @"23";
+            string _rightImageInvalidBase64Value = null;
 
             //Calling the left api to insert/update the image
             HttpResponseMessage response = await client.PostAsJsonAsync("v1/diff/" + _currentId + "/left", new { Base64Image = _leftImageEmpty });
