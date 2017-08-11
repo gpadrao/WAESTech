@@ -30,7 +30,7 @@ namespace WAES.Domain.Tests.Entities
 
         [TestMethod]
         [Description("This test provides validation about trying to persist an instance that its IdCompare property is non positive")]
-        public void Shall_Not_Accept_Non_PositiveId()
+        public void Shall_Not_Accept_Non_Positive_Id()
         {
             _waesImage = new WAESImage()
             {

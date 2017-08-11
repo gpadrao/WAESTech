@@ -1,13 +1,13 @@
 IF EXISTS (SELECT   * FROM  [sys].[tables] WHERE [name] = 'WAESImage')
 BEGIN
     DROP TABLE [dbo].[WAESImage];
-END;
+END
 GO
 
 IF EXISTS (SELECT   * FROM  [sys].[tables] WHERE [name] = 'WAESLog')
 BEGIN
     DROP TABLE [dbo].WAESLog;
-END;
+END
 GO
 
 CREATE TABLE [dbo].[WAESImage](

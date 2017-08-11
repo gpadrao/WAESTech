@@ -103,6 +103,11 @@ C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Web\bin\Microsoft.Pr
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Web\obj\Debug\WAES.Web.csprojResolveAssemblyReference.cache
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Web\obj\Debug\WAES.Web.dll
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Web\obj\Debug\WAES.Web.pdb
+C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Web\bin\log4net.dll
+C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Web\bin\log4net.xml
+C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Web\bin\WAES.Infra.CrossCutting.Log.dll
+C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Web\bin\WAES.Infra.CrossCutting.Log.pdb
+C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Web\bin\AutoMapper.Net4.dll
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\ApplicationInsights.config
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\roslyn\csc.exe
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\roslyn\csc.exe.config
@@ -137,6 +142,7 @@ C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\WAES.Web.pdb
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\Antlr3.Runtime.dll
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\EntityFramework.dll
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\EntityFramework.SqlServer.dll
+C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\log4net.dll
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\Microsoft.AI.Agent.Intercept.dll
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\Microsoft.AI.DependencyCollector.dll
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\Microsoft.AI.PerfCounterCollector.dll
@@ -163,6 +169,7 @@ C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\System.Web.WebPages.dll
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\System.Web.WebPages.Razor.dll
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\WAES.Application.dll
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\WAES.Infra.CrossCutting.IoC.dll
+C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\WAES.Infra.CrossCutting.Log.dll
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\WAES.Infra.CrossCutting.Utilities.dll
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\WebActivatorEx.dll
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\WebGrease.dll
@@ -175,9 +182,11 @@ C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\WAES.Application.pdb
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\WAES.Application.dll.config
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\WAES.Infra.CrossCutting.IoC.pdb
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\WAES.Infra.CrossCutting.IoC.dll.config
+C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\WAES.Infra.CrossCutting.Log.pdb
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\WAES.Infra.CrossCutting.Utilities.pdb
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\EntityFramework.xml
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\EntityFramework.SqlServer.xml
+C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\log4net.xml
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\Newtonsoft.Json.xml
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\Ninject.xml
@@ -208,9 +217,3 @@ C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\Microsoft.Practices.Servi
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\obj\Debug\WAES.Web.csprojResolveAssemblyReference.cache
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\obj\Debug\WAES.Web.dll
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\obj\Debug\WAES.Web.pdb
-C:\workspace\luis\github\WAESTech\slnWAES\WAES.Web\bin\AutoMapper.Net4.dll
-C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Web\bin\log4net.dll
-C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Web\bin\log4net.xml
-C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Web\bin\WAES.Infra.CrossCutting.Log.dll
-C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Web\bin\WAES.Infra.CrossCutting.Log.pdb
-C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Web\bin\AutoMapper.Net4.dll
