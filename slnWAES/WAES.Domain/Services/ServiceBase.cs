@@ -5,6 +5,11 @@ using WAES.Domain.Interfaces.Services;
 
 namespace WAES.Domain.Services
 {
+    /// <summary>
+    /// This class implement all generic methods specified in the IServiceBase interface
+    /// All methods are only allowed to access the repository, no business rules are allowed here
+    /// </summary>
+    /// <typeparam name="TEntity"></typeparam>
     public class ServiceBase<TEntity> : IDisposable, IServiceBase<TEntity> where TEntity : class
     {
         private readonly IRepositoryBase<TEntity> _repository;

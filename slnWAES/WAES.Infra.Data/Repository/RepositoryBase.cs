@@ -10,10 +10,17 @@ using WAES.Infra.Data.Interfaces;
 
 namespace WAES.Infra.Data.Repository
 {
+    /// <summary>
+    /// Class that implements the "Repository Pattern" providing database access to manipulate the entities within the context
+    /// </summary>
+    /// <typeparam name="TEntity">Entity that will be manipulated</typeparam>
     public class RepositoryBase<TEntity> : IRepositoryBase<TEntity>
         where TEntity : class
        , new()
     {
+        /// <summary>
+        /// Establishing the proper context to access data 
+        /// </summary>
         private readonly ContextManager<WAESModelContext> _contextManager = ServiceLocator.Current.GetInstance<IContextManager<WAESModelContext>>() as ContextManager<WAESModelContext>;
 
         protected IDbSet<TEntity> DbSet;

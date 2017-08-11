@@ -6,6 +6,10 @@ using WAES.Domain.Interfaces.Services;
 
 namespace WAES.Domain.Services
 {
+    /// <summary>
+    /// Specializing methods for the WAESImage entity.
+    /// These methods are only allowed to access the repository, again, no business rules are allowed here.
+    /// </summary>
     public class WAESImageService : ServiceBase<WAESImage>, IWAESImageService
     {
         private readonly IWAESImageRepository _waesImageRepository;

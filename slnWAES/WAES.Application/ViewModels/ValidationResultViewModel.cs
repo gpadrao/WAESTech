@@ -1,7 +1,7 @@
 ﻿namespace WAES.Application.ViewModels
 {
     /// <summary>
-    /// Class that will provide final method information about the result of the operation
+    /// Class that will provide final information about the result of the operation
     /// </summary>
     public class ValidationResultViewModel
     {

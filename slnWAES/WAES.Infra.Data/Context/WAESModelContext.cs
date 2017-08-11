@@ -5,6 +5,9 @@ using WAES.Infra.Data.EntityConfig;
 
 namespace WAES.Infra.Data.Context
 {
+    /// <summary>
+    /// Specializing the WAESModelContext, including all availabe entities mapping configuration, establishing the string connection name and establishing name conventions
+    /// </summary>
     public class WAESModelContext : BaseDbContext
     {
         public WAESModelContext() : base("WAESConnection")

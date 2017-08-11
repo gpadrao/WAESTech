@@ -5,6 +5,10 @@ using WAES.Infra.CrossCutting.Utilities;
 
 namespace WAES.Domain.Entities
 {
+    /// <summary>
+    /// Class that represents the WAESImage table
+    /// Implements the ISelfValidator, obligating the class to implement the IsValid method, to ensure the quality of the properties
+    /// </summary>
     public class WAESImage : ISelfValidator
     {
         public WAESImage()
@@ -27,8 +31,6 @@ namespace WAES.Domain.Entities
         /// Defines from where the images comes  '0 - Right' or '1 - Left'
         /// </summary>
         public int Side { get; set; }
-
-        public ValidationResult ValidationResult { get; private set; }
 
         public bool IsValid()
         {

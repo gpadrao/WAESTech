@@ -1,7 +1,7 @@
 ﻿namespace WAES.Application.ViewModels
 {
     /// <summary>
-    /// Model that will provide the method signature for sending images
+    /// Model that will be provided in the method signature for sending images
     /// </summary>
     public class IncomeImageViewModel
     {

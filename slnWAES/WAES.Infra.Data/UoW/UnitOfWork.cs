@@ -5,6 +5,10 @@ using WAES.Infra.Data.Interfaces;
 
 namespace WAES.Infra.Data.UoW
 {
+    /// <summary>
+    /// Class that implements the "Unit of Work Design Pattern" concept
+    /// </summary>
+    /// <typeparam name="TContext"></typeparam>
     public class UnitOfWork<TContext> : IUnitOfWork<TContext> where TContext : IDbContext, new()
     {
         private readonly IDbContext _dbContext;

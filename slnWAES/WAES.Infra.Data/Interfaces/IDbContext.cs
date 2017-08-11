@@ -3,6 +3,9 @@ using System.Data.Entity.Infrastructure;
 
 namespace WAES.Infra.Data.Interfaces
 {
+    /// <summary>
+    /// Interface that defines properties and methods to access database
+    /// </summary>
     public interface IDbContext
     {
         IDbSet<T> Set<T>() where T : class;

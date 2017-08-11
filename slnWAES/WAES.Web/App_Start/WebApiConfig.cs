@@ -9,9 +9,6 @@ namespace WAES.Web
     {
         public static void Register(HttpConfiguration config)
         {
-            // Web API configuration and services
-            //config.Services.Replace(typeof(IHttpControllerSelector), new ApiVersioningSelector((config)));
-
             config.Formatters.Clear();
             config.Formatters.Add(new JsonMediaTypeFormatter());
             config.Formatters.Add(new BsonMediaTypeFormatter());
@@ -31,7 +28,7 @@ namespace WAES.Web
                 defaults: new { id = RouteParameter.Optional }
             );
             GlobalConfiguration.Configuration.DependencyResolver = new NinjectResolver(new Container().GetModule());
-            //SwaggerConfig.Register();
+
         }
     }
 }

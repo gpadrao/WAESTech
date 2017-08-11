@@ -3,6 +3,9 @@ using WAES.Infra.Data.Interfaces;
 
 namespace WAES.Infra.Data.Context
 {
+    /// <summary>
+    /// Class that implement database context mapping all available entities
+    /// </summary>
     public class BaseDbContext : DbContext, IDbContext
     {
         public BaseDbContext(string nameOrConnectionString)

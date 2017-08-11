@@ -2,6 +2,9 @@
 
 namespace WAES.Infra.CrossCutting.Utilities
 {
+    /// <summary>
+    /// Class that centralizes all Enums and Structs used in the application
+    /// </summary>
     public class Constants
     {
         /// <summary>
