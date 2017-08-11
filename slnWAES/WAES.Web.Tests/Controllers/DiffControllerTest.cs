@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Configuration;
 using System.Net.Http;
 using System.Net.Http.Formatting;
 using System.Net.Http.Headers;
@@ -27,7 +28,7 @@ namespace WAES.Web.Tests.Controllers
         public void DiffControllerTestInitialize()
         {
             client = new HttpClient();
-            client.BaseAddress = new Uri("http://localhost:50490/");
+            client.BaseAddress = new Uri(ConfigurationManager.AppSettings["urlBase"].ToString());
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
