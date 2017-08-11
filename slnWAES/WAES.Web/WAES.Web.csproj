@@ -52,6 +52,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -288,6 +291,10 @@
     <ProjectReference Include="..\WAES.Infra.CrossCutting.IoC\WAES.Infra.CrossCutting.IoC.csproj">
       <Project>{0ffd3ec5-d400-4b8d-b456-1b1e6f08845e}</Project>
       <Name>WAES.Infra.CrossCutting.IoC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WAES.Infra.CrossCutting.Log\WAES.Infra.CrossCutting.Log.csproj">
+      <Project>{b6954b3d-d912-49fb-b877-5a392e881122}</Project>
+      <Name>WAES.Infra.CrossCutting.Log</Name>
     </ProjectReference>
     <ProjectReference Include="..\WAES.Infra.CrossCutting.Utilities\WAES.Infra.CrossCutting.Utilities.csproj">
       <Project>{b734fc7d-8e5e-4a4a-b1c9-5c638d184c46}</Project>

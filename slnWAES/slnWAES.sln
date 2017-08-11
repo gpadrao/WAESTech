@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WAES.Web", "WAES.Web\WAES.Web.csproj", "{64DA0217-3568-4E0B-B2B3-007B694C2940}"
 EndProject
@@ -40,6 +40,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WAES.Domain.Tests", "WAES.Domain.Tests\WAES.Domain.Tests.csproj", "{73F97B96-CBEB-4CE2-94F7-5A47DE276088}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WAES.Application.Tests", "WAES.Application.Tests\WAES.Application.Tests.csproj", "{1D08A50A-90A3-43EE-8A77-1BB9244AE738}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WAES.Infra.CrossCutting.Log", "WAES.Infra.CrossCutting.Log\WAES.Infra.CrossCutting.Log.csproj", "{B6954B3D-D912-49FB-B877-5A392E881122}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +85,10 @@ Global
 		{1D08A50A-90A3-43EE-8A77-1BB9244AE738}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D08A50A-90A3-43EE-8A77-1BB9244AE738}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D08A50A-90A3-43EE-8A77-1BB9244AE738}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6954B3D-D912-49FB-B877-5A392E881122}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6954B3D-D912-49FB-B877-5A392E881122}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6954B3D-D912-49FB-B877-5A392E881122}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6954B3D-D912-49FB-B877-5A392E881122}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -101,6 +107,7 @@ Global
 		{7F0DD252-9B10-4002-BE7D-69987C0FD7BD} = {EB0B86E4-CD46-4307-816F-953688454B4C}
 		{73F97B96-CBEB-4CE2-94F7-5A47DE276088} = {7F0DD252-9B10-4002-BE7D-69987C0FD7BD}
 		{1D08A50A-90A3-43EE-8A77-1BB9244AE738} = {7F0DD252-9B10-4002-BE7D-69987C0FD7BD}
+		{B6954B3D-D912-49FB-B877-5A392E881122} = {E020B9F6-05A1-4D09-866E-E526F2263BC8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45

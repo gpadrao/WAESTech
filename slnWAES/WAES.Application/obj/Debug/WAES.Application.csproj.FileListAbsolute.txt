@@ -44,3 +44,7 @@ C:\workspace\luis\github\WAESTech\slnWAES\WAES.Application\bin\Debug\Microsoft.P
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Application\obj\Debug\WAES.Application.csprojResolveAssemblyReference.cache
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Application\obj\Debug\WAES.Application.dll
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Application\obj\Debug\WAES.Application.pdb
+C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Application\bin\Debug\log4net.dll
+C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Application\bin\Debug\log4net.xml
+C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Application\bin\Debug\WAES.Infra.CrossCutting.Log.dll
+C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Application\bin\Debug\WAES.Infra.CrossCutting.Log.pdb

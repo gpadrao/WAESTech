@@ -1,3 +1,15 @@
+IF EXISTS (SELECT   * FROM  [sys].[tables] WHERE [name] = 'WAESImage')
+BEGIN
+    DROP TABLE [dbo].[WAESImage];
+END;
+GO
+
+IF EXISTS (SELECT   * FROM  [sys].[tables] WHERE [name] = 'WAESLog')
+BEGIN
+    DROP TABLE [dbo].WAESLog;
+END;
+GO
+
 CREATE TABLE [dbo].[WAESImage](
 	[WAESImageId] [uniqueidentifier] NOT NULL,
 	[ImageContent] [varbinary](max) NULL,
@@ -13,6 +25,28 @@ GO
 
 ALTER TABLE [dbo].[WAESImage] ADD  CONSTRAINT [DF_WAESImage_WAESImageId]  DEFAULT (newid()) FOR [WAESImageId]
 GO
+
+CREATE TABLE [dbo].[WAESLog](
+	[WAESLogId] [uniqueidentifier] NOT NULL,
+	[Message] [varchar](max) NOT NULL,
+	[LogDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_WAESLog] PRIMARY KEY CLUSTERED 
+(
+	[WAESLogId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+ALTER TABLE [dbo].[WAESLog] ADD  CONSTRAINT [DF_WAESLog_WAESLogId]  DEFAULT (newid()) FOR [WAESLogId]
+GO
+
+ALTER TABLE [dbo].[WAESLog] ADD  CONSTRAINT [DF_WAESLog_LogDate]  DEFAULT (getdate()) FOR [LogDate]
+GO
+
 
 
 

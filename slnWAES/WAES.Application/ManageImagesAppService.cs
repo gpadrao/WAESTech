@@ -9,6 +9,7 @@ using WAES.Infra.Data.Context;
 using System.Linq;
 using System.Drawing;
 using System.IO;
+using WAES.Infra.CrossCutting.Log;
 
 namespace WAES.Application
 {
@@ -38,11 +39,12 @@ namespace WAES.Application
         /// <returns></returns>
         public ValidationResultViewModel AddImage(int idCompare, IncomeImageViewModel model, Constants.ImageSide imageSide)
         {
-            ValidationResultViewModel modelReturn = null;
+            ValidationResultViewModel modelReturn = new ValidationResultViewModel();
             WAESImage item = _waesImageService.GetBySenderIdAndSide(idCompare, (int)imageSide);
             //I decided to remove the previous record, if exists, to keep comparison clear
             if (item != null)
             {
+                Logger.LogInfo("Removing previous '" + SharedMethods.GetEnumDescription(imageSide) + "' image of Id '" + idCompare +"'");
                 BeginTransaction();
                 _waesImageService.Remove(item);
                 Commit();
@@ -51,7 +53,7 @@ namespace WAES.Application
             //Validating if the image content is valid
             if (SharedMethods.IsBase64Valid(model.Base64Image))
             {
-
+                Logger.LogInfo("Creating new '" + SharedMethods.GetEnumDescription(imageSide) + "' image of Id '" + idCompare + "'");
                 //Creating the instance of the model to persist on database
                 item = new WAESImage()
                 {
@@ -77,7 +79,6 @@ namespace WAES.Application
 
                         modelReturn = MountReturn(Constants.PossibleReturns.ERROR);
                         modelReturn.Message = modelReturn.Message + " : " + ex.Message;
-
                     }
                 }
                 else
@@ -88,8 +89,10 @@ namespace WAES.Application
             }
             else
             {
+
                 modelReturn = MountReturn(Constants.PossibleReturns.INVALID_BASE64_PARAMETER);
             }
+            Logger.LogInfo(modelReturn.Message);
             return modelReturn;
         }
 
@@ -100,7 +103,7 @@ namespace WAES.Application
         /// <returns></returns>
         public ValidationResultViewModel CompareImages(int idCompare)
         {
-            ValidationResultViewModel modelReturn = null;
+            ValidationResultViewModel modelReturn = new ValidationResultViewModel();
             int left = (int)Constants.ImageSide.Left;
             int right = (int)Constants.ImageSide.Right;
             //Creating the list base on the incoming Id
@@ -110,7 +113,7 @@ namespace WAES.Application
             {
                 case 0: // Case the list is empty, return the message where no files associated with the incoming Id were found
                     {
-
+                        
                         modelReturn = MountReturn(Constants.PossibleReturns.NO_FILES);
                         modelReturn.Message = String.Format(modelReturn.Message, idCompare);
                         break;
@@ -154,6 +157,8 @@ namespace WAES.Application
                             {
                                 modelReturn = MountReturn(Constants.PossibleReturns.SAME_SIZE_DIFFERENT);
                                 modelReturn.Message = String.Format(modelReturn.Message, idCompare);
+
+                                Logger.LogInfo(modelReturn.Message);
                             }
                             else
                             {
@@ -170,6 +175,7 @@ namespace WAES.Application
                     }
 
             }
+            Logger.LogInfo(modelReturn.Message);
             return modelReturn;
         }
         //I created this private method just to encapsulate creation of the return model, with a purpose to do not repeat code

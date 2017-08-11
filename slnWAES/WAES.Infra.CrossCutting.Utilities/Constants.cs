@@ -7,12 +7,15 @@ namespace WAES.Infra.CrossCutting.Utilities
     /// </summary>
     public class Constants
     {
+        public const string WAESLogRegister = "WAESLogRegister";
         /// <summary>
         /// Values of valid sides, to insert images
         /// </summary>
         public enum ImageSide
         {
+            [Description("Left")]
             Left = 0,
+            [Description("Right")]
             Right = 1
         }
         /// <summary>

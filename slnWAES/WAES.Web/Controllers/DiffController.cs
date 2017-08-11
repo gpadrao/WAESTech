@@ -2,6 +2,7 @@
 using System.Web.Http.Description;
 using WAES.Application.Interfaces;
 using WAES.Application.ViewModels;
+using WAES.Infra.CrossCutting.Log;
 using WAES.Infra.CrossCutting.Utilities;
 
 namespace WAES.Web.Controllers
@@ -36,6 +37,7 @@ namespace WAES.Web.Controllers
         [ResponseType(typeof(ValidationResultViewModel))]
         public ValidationResultViewModel InputLeftImage(int id, IncomeImageViewModel model)
         {
+            Logger.LogInfo("Trying to input left image of Id = '" + id + "'");
             //Calls a service, responsible for manipulate the model and return the model with the result content.
             return _manageImagesAppService.AddImage(id, model, Constants.ImageSide.Left);
         }
@@ -55,6 +57,7 @@ namespace WAES.Web.Controllers
         [ResponseType(typeof(ValidationResultViewModel))]
         public ValidationResultViewModel InputRightmage(int id, IncomeImageViewModel model)
         {
+            Logger.LogInfo("Trying to input right image of Id = '" + id + "'");
             //Calls a service, responsible for manipulate the model and return the model with the result content.
             return _manageImagesAppService.AddImage(id, model, Constants.ImageSide.Right);
         }
@@ -72,6 +75,7 @@ namespace WAES.Web.Controllers
         [ResponseType(typeof(ValidationResultViewModel))]
         public ValidationResultViewModel GetDiff(int id)
         {
+            Logger.LogInfo("Trying to diff images of Id = '" + id + "'");
             //Calls a service, responsible for compare the images and return the model with the result content.
             return _manageImagesAppService.CompareImages(id);
         }
