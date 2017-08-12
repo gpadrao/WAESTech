@@ -45,7 +45,7 @@ I've splitted up all projects according to DDD ( Domain Driven Design ) definiti
   - WAES.Application.Tests
   - WAES.Domain.Tests
 
-## Executing the Application
+## Downloading and Configuring the Application
 
 - Download the source code.
 - After unzip the file, locate the slnWAES.sln file and open it in your Visual Studio 2017 version.
@@ -62,8 +62,8 @@ I've splitted up all projects according to DDD ( Domain Driven Design ) definiti
 
 ![alt text](https://github.com/luisferop/WAESTech/blob/master/Images/opening_script.PNG)
 
-- Open this file in your SQL IDE ( I always use the Microsoft SQL Server Management Studio ), select your new database, that you should have create previously and execute this script.
-- After you execute the script, your database should like the image below.
+- Open this file in your SQL IDE ( I always use the Microsoft SQL Server Management Studio ), select your new database that you should have created previously and then execute this script.
+- After execute the script, your database should like the image below.
 
 ![alt text](https://github.com/luisferop/WAESTech/blob/master/Images/database_tables_creation.PNG)
 
@@ -75,3 +75,9 @@ I've splitted up all projects according to DDD ( Domain Driven Design ) definiti
 - Current values of each of these parameters listed above start with "your" ( like the image below ), then you should, please, specify the correct values for all.
  
  ![alt text](https://github.com/luisferop/WAESTech/blob/master/Images/connection_string.PNG)
+ 
+ - That's all to run the application, but we will need to run Integration Test, so let's take an advantage that we are here and configure the **App.config** to point to the correct host. So, please locate the **WAES.Web.Tests** project and open its **App.config** file. If you plan to deploy the Api and run the tests pointing to this new address, please make sure to change the **urlBase** key in the AppSettings node. Now, this configured address is pointing to localhost. See the images below.
+ 
+ ![alt text](https://github.com/luisferop/WAESTech/blob/master/Images/web_tests_app_config.PNG)
+ 
+ ![alt text](https://github.com/luisferop/WAESTech/blob/master/Images/app_config_tests.PNG)
