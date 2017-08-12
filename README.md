@@ -1,6 +1,6 @@
 # WAES Tech Assignment
 
-Provides an entire solution develped using Visual Studio Enterprise 2017 to complete the requirements received by email. This solution consists in a Web Api service, that implements the requested endpoints for the requirements.
+Provides an entire solution developed using Visual Studio Enterprise 2017 to complete the requirements received by email. This solution consists in a Web Api service, that implements the requested endpoints for the requirements.
 
 ## Technologies 
 - Asp.Net Web Api
@@ -93,3 +93,22 @@ I've splitted up all projects according to DDD ( Domain Driven Design ) definiti
  ![alt text](https://github.com/luisferop/WAESTech/blob/master/Images/help_page.PNG)
  
 
+## Integration Test and Unit Tests
+
+Finally, the tests!
+
+You will be able to see the tests in the **Test Explorer** tab ( Menu  = Test -> Windows -> Test Explorer ). The test list must look like the image below.
+ 
+ ![alt text](https://github.com/luisferop/WAESTech/blob/master/Images/test_explorer.PNG)
+ 
+**Please, don't forget to check if the App.config file of the project "WAES.Web.Test" is pointing to the correct address and also check the connectionstring property in the Web.config file within the project "WAES.Web"**. If everything is correct, after running all tests, the results will be equal the image below.
+ 
+ ![alt text](https://github.com/luisferop/WAESTech/blob/master/Images/test_explorer_success.PNG)
+ 
+ ## Thank you!
+ 
+Thank you and feel free to contact me if you have any problems.
+
+Email: luisferop@gmail.com
+Skype: luisfernandopereira
+ 
