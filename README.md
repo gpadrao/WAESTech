@@ -81,3 +81,15 @@ I've splitted up all projects according to DDD ( Domain Driven Design ) definiti
  ![alt text](https://github.com/luisferop/WAESTech/blob/master/Images/web_tests_app_config.PNG)
  
  ![alt text](https://github.com/luisferop/WAESTech/blob/master/Images/app_config_tests.PNG)
+ 
+ ## Swagger and Help Page
+ 
+ OK, after creating the database and then configure all **.config** files, it's time to run the application. I used the **Swashbuckle** Nuget Package to provide **Swagger** support for running few tests before implementing the integration tests. So the Swagger page will be available just writing **/Swagger** at the end of base url, like **"http://yourapiaddress/swagger"**. In this case, you will be able to run a few tests and see the generated routes. See the Swagger page below.
+ 
+ ![alt text](https://github.com/luisferop/WAESTech/blob/master/Images/swagger.PNG)
+ 
+ You can also access the **Help** page typing **"http://yourapiaddress/help"**, where you also can see the generated routes. See the Help page below.
+ 
+ ![alt text](https://github.com/luisferop/WAESTech/blob/master/Images/help_page.PNG)
+ 
+
