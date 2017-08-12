@@ -81,7 +81,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DatabaseScripts\CreateTable_WAESImage.sql" />
+    <Content Include="DatabaseScripts\CreateTablesWAES.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
