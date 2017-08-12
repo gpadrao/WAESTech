@@ -23,7 +23,7 @@ namespace WAES.Web.Controllers
             _manageImagesAppService = manageImagesAppService;
         }
         /// <summary>
-        /// Method responsible for insert/update a left valid image, that comes from the model and a correspondent Id.
+        /// Method responsible for insert/update a valid left image, that comes from the model and a correspondent Id.
         /// </summary>
         /// <param name="id">Identifier that should have a pair of images</param>
         /// <param name="model">Class that has only one parameter that represents a Base64 string, the parameter name is 'Base64Image'. Will be converted in a binary item</param>
@@ -35,6 +35,7 @@ namespace WAES.Web.Controllers
         [Route("{id}/left")]
         [AllowAnonymous]
         [ResponseType(typeof(ValidationResultViewModel))]
+        
         public ValidationResultViewModel InputLeftImage(int id, IncomeImageViewModel model)
         {
             Logger.LogInfo("Trying to input left image of Id = '" + id + "'");
@@ -43,7 +44,7 @@ namespace WAES.Web.Controllers
         }
 
         /// <summary>
-        /// Method responsible for insert/update a right valid image, that comes from the model and a correspondent Id.
+        /// Method responsible for insert/update a valid right image, that comes from the model and a correspondent Id.
         /// </summary>
         /// <param name="id">Identifier that should have a pair of images</param>
         /// <param name="model">Class that has only one parameter that represents a Base64 string, the parameter name is 'Base64Image'. Will be converted in a binary item</param>

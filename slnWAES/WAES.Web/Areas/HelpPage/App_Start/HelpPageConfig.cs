@@ -4,6 +4,7 @@
 
 using System.Diagnostics.CodeAnalysis;
 using System.Net.Http.Headers;
+using System.Web;
 using System.Web.Http;
 #if Handle_PageResultOfT
 using System.Web.Http.OData;
@@ -26,6 +27,8 @@ namespace WAES.Web.Areas.HelpPage
             Justification = "Part of a URI.")]
         public static void Register(HttpConfiguration config)
         {
+            config.SetDocumentationProvider(new XmlDocumentationProvider(string.Format(@"{0}\bin\Swagger.XML",
+                           System.AppDomain.CurrentDomain.BaseDirectory)));
             //// Uncomment the following to use the documentation from XML documentation file.
             //config.SetDocumentationProvider(new XmlDocumentationProvider(HttpContext.Current.Server.MapPath("~/App_Data/XmlDocument.xml")));
 

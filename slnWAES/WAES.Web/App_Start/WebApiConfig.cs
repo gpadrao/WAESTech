@@ -27,6 +27,7 @@ namespace WAES.Web
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
             GlobalConfiguration.Configuration.DependencyResolver = new NinjectResolver(new Container().GetModule());
 
         }
