@@ -2,13 +2,13 @@
 
 Provides an entire solution develped using Visual Studio Enterprise 2017 to complete the requirements received by email. This solution consists in a Web Api service, that implements the requested endpoints for the requirements.
 
-### Technologies 
+## Technologies 
 - Asp.Net Web Api
 - .Net Framework 4.5.2
 - C#
 - Microsoft SQL Server 2016 Express Edition
 
-### Nuget Packages
+## Nuget Packages
 - EntityFramework 6.1.3
 - NInject 3.2.2
 - NInject.Web.Common 3.2.3
@@ -44,3 +44,34 @@ I've splitted up all projects according to DDD ( Domain Driven Design ) definiti
 - Unit Tests
   - WAES.Application.Tests
   - WAES.Domain.Tests
+
+## Executing the Application
+
+- Download the source code.
+- After unzip the file, locate the slnWAES.sln file and open it in your Visual Studio 2017 version.
+- I highly recommend that you should click on Build -> Clean Solution menu to clear the code ( bin and obj folders )
+
+![alt text](https://github.com/luisferop/WAESTech/blob/master/Images/clean_solution.PNG)
+
+- Right Click over the solution on Project Explorer Tab and click on "Restore Nuget Packages" menu. This action will update all packages used in this solution and will update all references.
+ 
+![alt text](https://github.com/luisferop/WAESTech/blob/master/Images/restore_nuget_packages.PNG)
+
+- The solution needs a Microsoft SQL Server database to store information, so locate one available instance of SQL Server ( as mentioned  before, I've used the 2016 Express version ) and create a new database with your own login.
+- In the solution, locate the **WAES.Infra.Data** project, than locate in this project a folder named **DatabaseScripts**. There is only one file named **CreateTablesWAES.sql**. The project should like the image below.
+
+![alt text](https://github.com/luisferop/WAESTech/blob/master/Images/opening_script.PNG)
+
+- Open this file in your SQL IDE ( I always use the Microsoft SQL Server Management Studio ), select your new database, that you should have create previously and execute this script.
+- After you execute the script, your database should like the image below.
+
+![alt text](https://github.com/luisferop/WAESTech/blob/master/Images/database_tables_creation.PNG)
+
+- Now it's time to configure the "connectionstring" property that is within the Web.config file located in the **WAES.Web** project. You will need to change the following values:
+  - Server
+  - Database
+  - User Id
+  - Password
+- Current values of each of these parameters listed above start with "your" ( like the image below ), then you should, please, specify the correct values for all.
+ 
+ ![alt text](https://github.com/luisferop/WAESTech/blob/master/Images/connection_string.PNG)
