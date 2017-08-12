@@ -22,3 +22,4 @@ slnWAES/.vs/config/applicationhost.config
 *.pdb
 slnWAES/WAES.Application/obj/Debug/WAES.Application.csprojResolveAssemblyReference.cache
 slnWAES/WAES.Application/obj/Debug/CoreCompileInputs.cache
+slnWAES/.vs/slnWAES/v15/.suo
