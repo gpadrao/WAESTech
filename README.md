@@ -105,9 +105,14 @@ You will be able to see the tests in the **Test Explorer** tab ( Menu  = Test ->
  
  ![alt text](https://github.com/luisferop/WAESTech/blob/master/Images/test_explorer_success.PNG)
  
+ After you run your tests, whether you are coming from the Swagger page or running the solution tests, you can see the results in the database tables.
+
+- WAESImage table, will keep the images sent from Api web endpoints.
+- WAESLog table, will keep the messages to track all the steps during the execution of the period. I suggest you search sorted by the LogDate column.
+ 
  ## Thank you!
  
-Thank you and feel free to contact me if you have any problems.
+Thank you for this opportunity, I hope this solution can show you some of my technical skills. Feel free to contact me if you have any problems.
 
 Email: luisferop@gmail.com
 Skype: luisfernandopereira
