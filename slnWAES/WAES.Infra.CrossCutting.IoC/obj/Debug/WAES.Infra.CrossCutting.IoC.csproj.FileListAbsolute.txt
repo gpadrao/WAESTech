@@ -33,7 +33,6 @@ C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Infra.CrossCutting.I
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Infra.CrossCutting.IoC\bin\Debug\log4net.dll
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Infra.CrossCutting.IoC\bin\Debug\WAES.Infra.CrossCutting.Log.pdb
 C:\Users\lu.oliveira\Documents\GitHub\WAESTech\slnWAES\WAES.Infra.CrossCutting.IoC\bin\Debug\log4net.xml
-C:\workspace\luis\github\WAESTech\slnWAES\WAES.Infra.CrossCutting.IoC\bin\Debug\AutoMapper.Net4.dll
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Infra.CrossCutting.IoC\bin\Debug\WAES.Infra.CrossCutting.IoC.dll.config
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Infra.CrossCutting.IoC\bin\Debug\WAES.Infra.CrossCutting.IoC.dll
 C:\workspace\luis\github\WAESTech\slnWAES\WAES.Infra.CrossCutting.IoC\bin\Debug\WAES.Infra.CrossCutting.IoC.pdb

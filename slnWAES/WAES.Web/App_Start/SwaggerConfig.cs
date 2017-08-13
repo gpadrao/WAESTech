@@ -7,6 +7,9 @@ using Swashbuckle.Application;
 
 namespace WAES.Web
 {
+    /// <summary>
+    /// Setting properties for Swagger support, here I defined where the comments are to show in Swagger page :)
+    /// </summary>
     public class SwaggerConfig
     {
         public static void Register()

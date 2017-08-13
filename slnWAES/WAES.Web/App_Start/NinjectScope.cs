@@ -8,6 +8,7 @@ using System.Web.Http.Dependencies;
 
 namespace WAES.Web
 {
+    //Implementing the Ninject Scope, as I learned :)
     public class NinjectScope : IDependencyScope
     {
         protected IResolutionRoot ResolutionRoot;

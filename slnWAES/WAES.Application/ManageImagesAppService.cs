@@ -7,8 +7,6 @@ using WAES.Domain.Interfaces.Services;
 using WAES.Infra.CrossCutting.Utilities;
 using WAES.Infra.Data.Context;
 using System.Linq;
-using System.Drawing;
-using System.IO;
 using WAES.Infra.CrossCutting.Log;
 
 namespace WAES.Application
@@ -135,23 +133,11 @@ namespace WAES.Application
                         //Variable that will indicate that there are different pixels within two images with the same size
                         int numberOfDiffs = 0;
 
-                        //Converting the left image content into a Bitmap object
-                        Bitmap bmpLeft;
-                        using (var ms = new MemoryStream(listItems.Where(x => x.Side.Equals(left)).FirstOrDefault().ImageContent))
-                        {
-                            bmpLeft = new Bitmap(ms);
-                        }
-                        //Converting the right image content into a Bitmap object
-                        Bitmap bmpRight;
-                        using (var ms = new MemoryStream(listItems.Where(x => x.Side.Equals(right)).FirstOrDefault().ImageContent))
-                        {
-                            bmpRight = new Bitmap(ms);
-                        }
                         // Here I'm invoking a method that compares two different images. This method belongs to a shared library present in 
                         // the WAS.Infra.CrossCutting.Utilities project, I decided to put this method there to respect the Single Responsibility principle
                         // If true, it means that the images have same size, but if numberOfDiffs > 0, then images have same size, but they are different
                         // if false, it means that the images are different
-                        if (SharedMethods.GetDifferenceBetweenImages(bmpLeft, bmpRight, ref numberOfDiffs))
+                        if (SharedMethods.GetDifferenceBetweenImages(listItems.Where(x => x.Side.Equals(left)).FirstOrDefault().ImageContent, listItems.Where(x => x.Side.Equals(right)).FirstOrDefault().ImageContent, ref numberOfDiffs))
                         {
                             if (numberOfDiffs > 0)
                             {

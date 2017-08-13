@@ -10,7 +10,9 @@ namespace WAES.Web
     {
         protected void Application_Start()
         {
+            //Adding log4net support for this Web Api project
             log4net.Config.XmlConfigurator.Configure();
+
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);

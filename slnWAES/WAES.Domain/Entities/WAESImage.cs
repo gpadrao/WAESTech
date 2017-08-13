@@ -1,6 +1,5 @@
 ﻿using System;
 using WAES.Domain.Interfaces.Validation;
-using WAES.Domain.ValueObjects;
 using WAES.Infra.CrossCutting.Utilities;
 
 namespace WAES.Domain.Entities

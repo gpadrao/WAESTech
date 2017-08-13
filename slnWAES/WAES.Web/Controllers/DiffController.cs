@@ -8,7 +8,7 @@ using WAES.Infra.CrossCutting.Utilities;
 namespace WAES.Web.Controllers
 {
     /// <summary>
-    /// 
+    /// Controller defined for the WAES Tech Assignment, trying to attend the route mapping requirement
     /// </summary>
     [RoutePrefix("v1/diff")]
     public class DiffController : ApiController

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Drawing;
+using System.IO;
 using System.Reflection;
 
 namespace WAES.Infra.CrossCutting.Utilities
@@ -37,12 +38,24 @@ namespace WAES.Infra.CrossCutting.Utilities
         /// <param name="bmp2">Second image</param>
         /// <param name="numberOfDifferences">It will return 1 if the images have same size, but differ at least one pixel</param>
         /// <returns></returns>
-        public static bool GetDifferenceBetweenImages(Bitmap bmp1, Bitmap bmp2, ref int numberOfDifferences)
+        public static bool GetDifferenceBetweenImages(byte[] imageLeft, byte[] imageRight, ref int numberOfDifferences)
         {
+            //Converting the left image content into a Bitmap object
+            Bitmap bmpLeft;
+            using (var ms = new MemoryStream(imageLeft))
+            {
+                bmpLeft = new Bitmap(ms);
+            }
+            //Converting the right image content into a Bitmap object
+            Bitmap bmpRight;
+            using (var ms = new MemoryStream(imageRight))
+            {
+                bmpRight = new Bitmap(ms);
+            }
             numberOfDifferences = 0;
             bool areEqual = true;
-            Size s1 = bmp1.Size;
-            Size s2 = bmp2.Size;
+            Size s1 = bmpLeft.Size;
+            Size s2 = bmpRight.Size;
 
             //if the size is different, than return without need to search into the matrix
             if (s1 != s2) return false;
@@ -51,8 +64,8 @@ namespace WAES.Infra.CrossCutting.Utilities
             for (int y = 0; y < s1.Height; y++)
                 for (int x = 0; x < s1.Width; x++)
                 {
-                    Color c1 = bmp1.GetPixel(x, y);
-                    Color c2 = bmp2.GetPixel(x, y);
+                    Color c1 = bmpLeft.GetPixel(x, y);
+                    Color c2 = bmpRight.GetPixel(x, y);
                     if (c1 != c2)
                     {
                         numberOfDifferences++;

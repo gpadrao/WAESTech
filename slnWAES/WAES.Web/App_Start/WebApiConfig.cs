@@ -9,6 +9,7 @@ namespace WAES.Web
     {
         public static void Register(HttpConfiguration config)
         {
+            //Clearing all support formats and adding support for json ( http://www.json.org/ ) and bson ( http://bsonspec.org/ ) media types
             config.Formatters.Clear();
             config.Formatters.Add(new JsonMediaTypeFormatter());
             config.Formatters.Add(new BsonMediaTypeFormatter());
@@ -28,6 +29,7 @@ namespace WAES.Web
                 defaults: new { id = RouteParameter.Optional }
             );
 
+            //Making IoC happen, calling the Ninject resolver class to instantiate all mapping items.
             GlobalConfiguration.Configuration.DependencyResolver = new NinjectResolver(new Container().GetModule());
 
         }

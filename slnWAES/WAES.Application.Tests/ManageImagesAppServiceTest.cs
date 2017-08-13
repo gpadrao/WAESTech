@@ -8,8 +8,6 @@ using System.Collections.Generic;
 using WAES.Domain.Entities;
 using WAES.Application.Interfaces;
 using System.Linq;
-using System.Drawing;
-using System.IO;
 
 namespace WAES.Application.Tests
 {
@@ -185,8 +183,7 @@ namespace WAES.Application.Tests
             }
             if (SharedMethods.IsBase64Valid(model.Base64Image))
             {
-                bool isInsert = false;
-               
+              
                 item = new WAESImage()
                 {
                     WAESImageId = Guid.NewGuid(),
@@ -253,18 +250,8 @@ namespace WAES.Application.Tests
                 case 2:
                     {
                         int numberOfDiffs = 0;
-                        Bitmap bmpLeft;
-                        using (var ms = new MemoryStream(listItems.Where(x => x.Side.Equals(left)).FirstOrDefault().ImageContent))
-                        {
-                            bmpLeft = new Bitmap(ms);
-                        }
-                        Bitmap bmpRight;
-                        using (var ms = new MemoryStream(listItems.Where(x => x.Side.Equals(right)).FirstOrDefault().ImageContent))
-                        {
-                            bmpRight = new Bitmap(ms);
-                        }
 
-                        if (SharedMethods.GetDifferenceBetweenImages(bmpLeft, bmpRight, ref numberOfDiffs))
+                        if (SharedMethods.GetDifferenceBetweenImages(listItems.Where(x => x.Side.Equals(left)).FirstOrDefault().ImageContent, listItems.Where(x => x.Side.Equals(right)).FirstOrDefault().ImageContent, ref numberOfDiffs))
                         {
                             if (numberOfDiffs > 0)
                             {

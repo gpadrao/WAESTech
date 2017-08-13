@@ -11,6 +11,9 @@ using WAES.Application;
 
 namespace WAES.Infra.CrossCutting.IoC
 {
+    /// <summary>
+    /// Class where relations between interfaces and classes are created
+    /// </summary>
     public class NinjectModulo : NinjectModule
     {
         public override void Load()

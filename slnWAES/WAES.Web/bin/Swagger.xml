@@ -4,6 +4,16 @@
         <name>WAES.Web</name>
     </assembly>
     <members>
+        <member name="T:WAES.Web.NinjectResolver">
+            <summary>
+            Implementing the NInject resolver
+            </summary>
+        </member>
+        <member name="T:WAES.Web.SwaggerConfig">
+            <summary>
+            Setting properties for Swagger support, here I defined where the comments are to show in Swagger page :)
+            </summary>
+        </member>
         <member name="M:WAES.Web.Areas.HelpPage.ApiDescriptionExtensions.GetFriendlyId(System.Web.Http.Description.ApiDescription)">
             <summary>
             Generates an URI-friendly ID for the <see cref="T:System.Web.Http.Description.ApiDescription"/>. E.g. "Get-Values-id_name" instead of "GetValues/{id}?name={name}"
@@ -483,7 +493,7 @@
         </member>
         <member name="T:WAES.Web.Controllers.DiffController">
             <summary>
-            
+            Controller defined for the WAES Tech Assignment, trying to attend the route mapping requirement
             </summary>
         </member>
         <member name="M:WAES.Web.Controllers.DiffController.#ctor(WAES.Application.Interfaces.IManageImagesAppService)">

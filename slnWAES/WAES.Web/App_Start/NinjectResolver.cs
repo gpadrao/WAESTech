@@ -3,6 +3,9 @@ using System.Web.Http.Dependencies;
 
 namespace WAES.Web
 {
+    /// <summary>
+    /// Implementing the NInject resolver
+    /// </summary>
     public class NinjectResolver : NinjectScope, IDependencyResolver
     {
         private readonly IKernel _kernel;
